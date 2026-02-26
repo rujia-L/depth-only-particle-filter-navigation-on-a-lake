@@ -99,22 +99,6 @@ Phase 2: Navigation
 - **Ocean-scale environments:** smoother depth fields reduce identifiability → requires parameter scaling
   (more particles, longer exploration, larger motion scale) and may still fail in near-flat bathymetry.
 
----
-
-## Repository Structure (suggested)
-
-```text
-src/
-  particle_filter.*        # predict/update/resample
-  motion_model.*           # dynamics + collision handling
-  controller.*             # exploration + go-home policy
-maps/                      # bathymetric maps + home location
-experiments/               # lake/ocean configs
-results/                   # trajectories, particle clouds, error curves
-```
-
----
-
 ## How to Run
 > Replace the paths/filenames below with your actual entry points.
 
